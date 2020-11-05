@@ -11,8 +11,8 @@ exports.seed = function (knex) {
           user_id: 1,
         },
         {
-          title: "React bir UI (kullanici arayuzu) kutuphanesidir",
-          content: "React sayesinde dinamik interaktif web uygulamari gelistirebilirsiniz.",
+          title: "Başkası",
+          content: "Bizimki.",
           user_id: 1,
         },
         {
