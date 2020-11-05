@@ -13,7 +13,6 @@ const userRouter = require("../data/routers/user-router");
 router.use("/posts", postRouter);
 router.use("/", userRouter);
 
-
 router.get("/", (req, res) => {
   res.status(200).json({ server: "up" });
 });
