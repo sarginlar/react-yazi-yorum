@@ -4,7 +4,7 @@ exports.up = function (knex) {
       table.increments();
       table.string("title").notNullable().index();
       table.text("content").notNullable();
-      table.deneme("dene").notNullable();
+      table.string("dene").notNullable();
       table.datetime("created_at").defaultTo(knex.fn.now());
     })
     .createTable("comment", (table) => {
