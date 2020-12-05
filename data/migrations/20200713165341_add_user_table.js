@@ -8,11 +8,7 @@ exports.up = function (knex) {
     })
     .alterTable("post", (table) => {
       table.integer("user_id").unsigned();
-      table
-        .foreign("user_id")
-        .references("id")
-        .inTable("user")
-        .onDelete("CASCADE");
+      table.foreign("user_id").references("id").inTable("user").onDelete("CASCADE");
     });
 };
 
